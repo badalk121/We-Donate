@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/volun.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="title">
+      <button onclick="window.location.href='index.html'" class="btn"><i class="fa fa-home"></i> Home</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fill this Form.
+    </div>
+    <div class="content">
+      <form action="PHP/volun.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input name="name" type="text" placeholder="Your Full Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">City/State</span>
+            <input name="city" type="text" placeholder="City/State" required>
+          </div>
+          <div class="input-box">
+            <span class="details">E-Mail</span>
+            <input name="email" type="email" placeholder="Your E-Mail Address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input name="phone" type="text" placeholder="Your Contact Number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input name="age" type="number" min="18" max="60" placeholder="Minimum 18 Y/O" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input name="address" type="text" placeholder="Your Postal Address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Tell us a bit about yourself</span>
+            <textarea name="reason" required></textarea>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" value="male" id="dot-1">
+          <input type="radio" name="gender" value="female" id="dot-2">
+          <input type="radio" name="gender" value="unstated" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer Not To Say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit Form">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
